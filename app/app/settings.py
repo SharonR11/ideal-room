@@ -73,7 +73,7 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-DATABASES ["default"] = dj_database_url.parse("postgres://lab5_gc4o_user:SNDreeQG4Idf0GUWWXkEE9uUNxEtxDLD@dpg-ckad6nugtj9c73fbn6j0-a.oregon-postgres.render.com/lab5_gc4o")
+# DATABASES ["default"] = dj_database_url.parse("postgres://lab5_gc4o_user:SNDreeQG4Idf0GUWWXkEE9uUNxEtxDLD@dpg-ckad6nugtj9c73fbn6j0-a.oregon-postgres.render.com/lab5_gc4o")
 
 
 # Password validation
@@ -111,12 +111,16 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+STATICFILES_DIRS=[
+    BASE_DIR / "alquiler/static"
+]
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-STATICFILES_DIRS=(os.path.join(BASE_DIR, 'alquiler/static'),)
+# STATICFILES_DIRS=(os.path.join(BASE_DIR, 'alquiler/static'),)
 
-# MEDIA_ROOT = BASE_DIR / "files/fotos"
-MEDIA_URL = "/media/"
+MEDIA_ROOT = BASE_DIR / "files/fotos"
+MEDIA_URL = "/media-files/"

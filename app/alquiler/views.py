@@ -8,6 +8,8 @@ from django.db.models import Q
 def menu(request):
     # persona_list=Persona.objects.all()
     # context={"persona_list":persona_list}
-    # return render(request,'plantilla/menu.html')
     return render(request,'plantilla/menu.html')
+    # return render(request,'plantilla/menu.html')
 
+def insertarpersona(request):
+    return redirect('/')
