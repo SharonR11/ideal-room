@@ -1,0 +1,57 @@
+.conte {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: -2;
+    left: 0;
+    right: 0;
+    background: linear-gradient(90deg, rgba(106, 223, 66, 0.4), rgba(0, 74, 217, 0.5));
+
+}
+
+.nav-color{
+    background-color: blue;
+}
+.custom-bg-color {
+    background-color: rgb(42, 80, 176); /* Reemplaza "#tu-color-aqui" con el color deseado */
+}
+
+.bt-color{
+    background-color: rgb(255, 255, 255);
+}
+.column-content {
+    max-width: 100%;
+    overflow: hidden;
+    align-items: center;
+}
+nav {
+    height: 60px; /* Cambia este valor según la altura deseada */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.col-md-4 {
+    display: flex;
+    height: 60px; /* Altura de las columnas */
+    /* border: 1px solid #ccc;  */
+    /* Añadir bordes para visualizar las columnas */
+}
+.col-left {
+    justify-content: flex-start; /* Centrar a la izquierda */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.col-center {
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.col-right {
+    justify-content: flex-end; /* Centrar a la derecha */
+    align-items: center; /* Centrar verticalmente */
+}
+.user-form {
+    display: flex;
+    align-items: center;
+    flex: 1; /* Asegura que el formulario y la imagen se ajusten correctamente */
+}

@@ -73,7 +73,7 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-# DATABASES ["default"] = dj_database_url.parse("postgres://lab5_gc4o_user:SNDreeQG4Idf0GUWWXkEE9uUNxEtxDLD@dpg-ckad6nugtj9c73fbn6j0-a.oregon-postgres.render.com/lab5_gc4o")
+DATABASES ["default"] = dj_database_url.parse("postgres://lab5_gc4o_user:SNDreeQG4Idf0GUWWXkEE9uUNxEtxDLD@dpg-ckad6nugtj9c73fbn6j0-a.oregon-postgres.render.com/lab5_gc4o")
 
 
 # Password validation
