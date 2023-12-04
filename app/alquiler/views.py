@@ -13,3 +13,6 @@ def menu(request):
 
 def insertarpersona(request):
     return redirect('/')
+
+def perfil(request):
+    return render(request,'plantilla/perfilusu.html')

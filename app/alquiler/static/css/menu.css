@@ -1,19 +1,6 @@
-.conte {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    z-index: -2;
-    left: 0;
-    right: 0;
-    background: linear-gradient(90deg, rgba(106, 223, 66, 0.4), rgba(0, 74, 217, 0.5));
-
-}
 
 .nav-color{
     background-color: blue;
-}
-.custom-bg-color {
-    background-color: rgb(42, 80, 176); /* Reemplaza "#tu-color-aqui" con el color deseado */
 }
 
 .bt-color{
@@ -26,9 +13,10 @@
 }
 nav {
     height: 60px; /* Cambia este valor según la altura deseada */
-    position: sticky;
-    top: 0;
+    
     z-index: 1000;
+    background-color: rgb(42, 80, 176);
+    
 }
 .col-md-4 {
     display: flex;
@@ -45,7 +33,6 @@ nav {
     justify-content: center; /* Centrar horizontalmente */
     align-items: center; /* Centrar verticalmente */
 }
-
 .col-right {
     justify-content: flex-end; /* Centrar a la derecha */
     align-items: center; /* Centrar verticalmente */
@@ -54,4 +41,212 @@ nav {
     display: flex;
     align-items: center;
     flex: 1; /* Asegura que el formulario y la imagen se ajusten correctamente */
+}
+.carousel-sty{
+    max-width: 300px; margin: 0 auto;
+    margin: 0 auto;
+}
+main{
+    margin-top: 60px;
+}
+.top-1{
+    margin-top: 60px;
+}
+.separado{
+    position: absolute;
+}
+.col-md-6 {
+    display: flex;
+    height: 50px; /* Altura de las columnas */
+    /* border: 1px solid #ccc;  */
+    /* Añadir bordes para visualizar las columnas */
+}
+.column-content2 {
+    max-width: 100%;
+}
+.col-custom {
+    height: 170px; /* Establecer la altura deseada para las columnas */
+    /* Otros estilos que desees aplicar a estas columnas */
+}
+.buscar {
+    display: flex;
+    align-items: center;
+    flex: 1; /* Asegura que el formulario y la imagen se ajusten correctamente */
+}
+.content1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-custom2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: rgb(161, 189, 214);
+    border-color: black ;
+    border-radius: 10px;
+    box-shadow: 3px 1px 10px rgb(23, 20, 20);
+    height: 130px; /* Establecer la altura deseada para las columnas */
+    /* Otros estilos que desees aplicar a estas columnas */
+}
+.box h3{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.box input{
+    font-size: 20px;
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+}
+.box input[type="text"]
+{
+    background: #fff;
+    width: 340px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 0 25px;
+}
+.box select{
+    position: relative;
+    left: -3px;
+    border: none;
+    outline: none;
+    background: #fff;
+    font-size: 18px;
+    padding: 13px 16px 11.5px;
+    margin: -2px;
+    border-right: 15px solid #fff;
+}
+.box input[type="submit"]
+{
+    position: relative;
+    left: -5px;
+    background: #fff;
+    width: 130px;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: blueviolet;
+}
+.opcion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: rgb(255, 255, 255);
+    border-color: black ;
+    border-radius: 10px;
+    box-shadow: 3px 1px 10px rgb(23, 20, 20);
+}
+
+
+
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.room-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.room-details {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 20px;
+    border: 1px solid #ccc;
+    width: 500px;
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.room-img {
+    width: 100%;
+    height: 150px;
+
+    margin-right: 20px;
+}
+
+.room-img img {
+    width: 100%;
+    height: auto;
+}
+
+.room-info {
+    width: 80%;
+
+
+}
+
+.room-cabeza {
+    display: flex;
+    justify-content: space-between;
+}
+
+.room-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.room-price {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 15px;
+
+}
+
+.room-ubi {
+    display: flex;
+    justify-content: start;
+}
+
+.room-paragraph {
+    color: #7f7f7f;
+    font-size: 10px;
+
+
+}
+
+.room-glovo {
+    width: 15px;
+    height: 15px;
+}
+
+.room-price {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    padding: 7px 10px;
+}
+
+.service img {
+    width: 15x;
+    height: 15px;
+}
+
+.available {
+    font-size: 8px;
+    color: green;
 }

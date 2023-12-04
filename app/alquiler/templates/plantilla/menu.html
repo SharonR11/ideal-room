@@ -9,7 +9,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     
     <link type="text/css" href='{% static "css/bootstrap.min.css" %}' rel="stylesheet"> 
-    <link type="text/css" href='{% static "css/menu.css" %}' rel="stylesheet"> 
+    <link type="text/css" href='{% static "css/menu.css" %}' rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body >
     <header>
@@ -49,7 +50,7 @@
                                     <button class="btn btn-outline-success" type="submit">Buscar</button>
                                 </form>
                                 <!-- Imagen de usuario -->
-                                <a class="" href="#">
+                                <a class="" href="/perfil">
                                     <img src="../../static/image/usuario.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
                                 </a>
                             </div>                            
@@ -59,15 +60,487 @@
             </div>
         </nav>
     </header>
-        
-        <main>
-            <div class="nav-color">
-                <p>
-                    Nisi aliquip voluptate culpa velit occaecat Lorem eiusmod est consequat ullamco veniam enim ad ex. Qui adipisicing eu id consectetur culpa aliqua qui dolor. Proident occaecat non proident quis tempor magna est amet. Aute culpa cupidatat consequat magna nostrud officia ipsum aliqua proident eu cupidatat ipsum. Esse laborum eu consequat Lorem eu labore nisi nisi. Mollit cupidatat dolor irure cupidatat aliquip ullamco enim.
-                </p>
+    <main >
+        <article>
+            <div class="container">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4 col-custom col-left">
+                            <div class="column-content2">
+                                <div id="carouselExampleSlidesOnly" class="carousel slide carousel-sty" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <img src="../../static/image/cuarto.png" class="d-block w-100" alt="...">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="../../static/image/cuarto.png" class="d-block w-100" alt="...">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="../../static/image/cuarto.png" class="d-block w-100" alt="...">
+                                      </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-custom col-center">
+                            <div class="column-content2">
+                                <div id="carouselExampleSlidesOnly" class="carousel slide carousel-sty" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <img src="../../static/image/cuarto.png" class="d-block w-100" alt="...">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="../../static/image/cuarto.png" class="d-block w-100" alt="...">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="../../static/image/cuarto.png" class="d-block w-100" alt="...">
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-custom col-right">
+                            <div class="column-content2">
+                                <div id="carouselExampleSlidesOnly" class="carousel slide carousel-sty" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <img src="../../static/image/cuarto.png" class="d-block w-100" alt="...">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="../../static/image/cuarto.png" class="d-block w-100" alt="...">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="../../static/image/cuarto.png" class="d-block w-100" alt="...">
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </main>
-        <footer>
-        </footer>
+        </article>
+        <article class="py-3">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-2 col-left"></div>
+                    <div class="col-md-8 col-center col-custom2">
+                        <div class="content1">
+                            <div class="box">
+                                <h3>Busca tu Alojamiento</h3>
+                                <form>
+                                    <input type="text" placeholder="tupe---">
+                                    <select>
+                                        <option>Option One</option>
+                                        <option>Option One</option>
+                                        <option>Option One</option>
+                                        <option>Option One</option>
+                                    </select>
+                                    <input type="submit" value="Search">
+                                </form>
+                            </div>                        
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-right"></div>
+                </div>
+            </div>
+            
+        </article>
+        <article class="py-5">
+           <div class="container">
+            <hr style="border: 2px rgb(13, 11, 11) solid;">
+           </div>
+        </article>
+
+        
+        <article class="py-3">
+            <div class="container-fluid">
+                <div class="container text-center">
+                    <div class="row row-cols-3">
+                        <div class="col">
+                            <div class="card mb-3" style="max-width: 100%; max-height: max-content;
+                                    border-left: 2px solid #bb6868; border-radius: 10px;">
+                                <div class="row g-0" >
+                                    <div class="col-md-5">
+                                        <a href="/perfil/{{p.idPersona}}">
+                                            <img src="https://i.pinimg.com/564x/99/57/50/9957506f5315d50b96b2c7ceda79295c.jpg" class="img-fluid w-100  rounded-start" >
+                                        </a>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="card-body" style="height: 90px;"> 
+                                            <div class="room-cabeza">
+                                                <h5 class="text-start" style="font-weight: bold;;font-size: 10px; margin-bottom: 0;">Habitacion independiente con baño propio</h5>
+                                                <div class="room-price">S/.240 </div>
+                                            </div>
+                                            <hr>
+                                            <div class="room-ubi">
+                                                <a href="https://www.google.com/maps">
+                                                    <img class="room-glovo" src="../../static/image/glovo.png">
+                                                </a>
+                                                <P class="room-paragraph">En el distrito de Santa Anita, Lima</P>
+                                            </div>
+
+                                            <div class="services">
+                                                <div class="service">
+                                                    <img src="../../static/image/cama.png" alt="Cama">
+                                                    <p class="available">Disponible</p>
+                                                </div>
+                                                <div class="service">
+                                                    <img src="../../static/image/ducha.png" alt="Ducha">
+                                                    <p class="available">Disponible</p>
+                                                </div>
+                                                <div class="service">
+                                                    <img src="../../static/image/luz.png" alt="Luz">
+                                                    <p class="available">Disponible</p>
+                                                </div>
+                                                <div class="service">
+                                                    <img src="../../static/image/wifi.png" alt="Internet">
+                                                    <p class="available">Disponible</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card mb-3" style="max-width: 100%; max-height: max-content;
+                                    border-left: 2px solid #bb6868; border-radius: 10px;">
+                                <div class="row g-0" >
+                                    <div class="col-md-5">
+                                        <a href="/perfil/{{p.idPersona}}">
+                                            <img src="https://i.pinimg.com/564x/99/57/50/9957506f5315d50b96b2c7ceda79295c.jpg" class="img-fluid w-100  rounded-start" >
+                                        </a>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="card-body" style="height: 90px;"> 
+                                            <div class="room-cabeza">
+                                                <h5 class="text-start" style="font-weight: bold;;font-size: 10px; margin-bottom: 0;">Habitacion independiente con baño propio</h5>
+                                                <div class="room-price">S/.240 </div>
+                                            </div>
+                                            <hr>
+                                            <div class="room-ubi">
+                                                <a href="https://www.google.com/maps">
+                                                    <img class="room-glovo" src="../../static/image/glovo.png">
+                                                </a>
+                                                <P class="room-paragraph">En el distrito de Santa Anita, Lima</P>
+                                            </div>
+
+                                            <div class="services">
+                                                <div class="service">
+                                                    <img src="../../static/image/cama.png" alt="Cama">
+                                                    <p class="available">Disponible</p>
+                                                </div>
+                                                <div class="service">
+                                                    <img src="../../static/image/ducha.png" alt="Ducha">
+                                                    <p class="available">Disponible</p>
+                                                </div>
+                                                <div class="service">
+                                                    <img src="../../static/image/luz.png" alt="Luz">
+                                                    <p class="available">Disponible</p>
+                                                </div>
+                                                <div class="service">
+                                                    <img src="../../static/image/wifi.png" alt="Internet">
+                                                    <p class="available">Disponible</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card mb-3" style="max-width: 100%; max-height: max-content;
+                                    border-left: 2px solid #bb6868; border-radius: 10px;">
+                                <div class="row g-0" >
+                                    <div class="col-md-5">
+                                        <a href="/perfil/{{p.idPersona}}">
+                                            <img src="https://i.pinimg.com/564x/99/57/50/9957506f5315d50b96b2c7ceda79295c.jpg" class="img-fluid w-100  rounded-start" >
+                                        </a>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="card-body" style="height: 90px;"> 
+                                            <div class="room-cabeza">
+                                                <h5 class="text-start" style="font-weight: bold;;font-size: 10px; margin-bottom: 0;">Habitacion independiente con baño propio</h5>
+                                                <div class="room-price">S/.240 </div>
+                                            </div>
+                                            <hr>
+                                            <div class="room-ubi">
+                                                <a href="https://www.google.com/maps">
+                                                    <img class="room-glovo" src="../../static/image/glovo.png">
+                                                </a>
+                                                <P class="room-paragraph">En el distrito de Santa Anita, Lima</P>
+                                            </div>
+
+                                            <div class="services">
+                                                <div class="service">
+                                                    <img src="../../static/image/cama.png" alt="Cama">
+                                                    <p class="available">Disponible</p>
+                                                </div>
+                                                <div class="service">
+                                                    <img src="../../static/image/ducha.png" alt="Ducha">
+                                                    <p class="available">Disponible</p>
+                                                </div>
+                                                <div class="service">
+                                                    <img src="../../static/image/luz.png" alt="Luz">
+                                                    <p class="available">Disponible</p>
+                                                </div>
+                                                <div class="service">
+                                                    <img src="../../static/image/wifi.png" alt="Internet">
+                                                    <p class="available">Disponible</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card mb-3" style="max-width: 100%; max-height: max-content;
+                                    border-left: 2px solid #bb6868; border-radius: 10px;">
+                                <div class="row g-0" >
+                                    <div class="col-md-5">
+                                        <a href="/perfil/{{p.idPersona}}">
+                                            <img src="https://i.pinimg.com/564x/99/57/50/9957506f5315d50b96b2c7ceda79295c.jpg" class="img-fluid w-100  rounded-start" >
+                                        </a>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="card-body" style="height: 90px;"> 
+                                            <div class="room-cabeza">
+                                                <h5 class="text-start" style="font-weight: bold;;font-size: 10px; margin-bottom: 0;">Habitacion independiente con baño propio</h5>
+                                                <div class="room-price">S/.240 </div>
+                                            </div>
+                                            <hr>
+                                            <div class="room-ubi">
+                                                <a href="https://www.google.com/maps">
+                                                    <img class="room-glovo" src="../../static/image/glovo.png">
+                                                </a>
+                                                <P class="room-paragraph">En el distrito de Santa Anita, Lima</P>
+                                            </div>
+
+                                            <div class="services">
+                                                <div class="service">
+                                                    <img src="../../static/image/cama.png" alt="Cama">
+                                                    <p class="available">Disponible</p>
+                                                </div>
+                                                <div class="service">
+                                                    <img src="../../static/image/ducha.png" alt="Ducha">
+                                                    <p class="available">Disponible</p>
+                                                </div>
+                                                <div class="service">
+                                                    <img src="../../static/image/luz.png" alt="Luz">
+                                                    <p class="available">Disponible</p>
+                                                </div>
+                                                <div class="service">
+                                                    <img src="../../static/image/wifi.png" alt="Internet">
+                                                    <p class="available">Disponible</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card mb-3" style="max-width: 100%; max-height: max-content;
+                                    border-left: 2px solid #bb6868; border-radius: 10px;">
+                                <div class="row g-0" >
+                                    <div class="col-md-5">
+                                        <a href="/perfil/{{p.idPersona}}">
+                                            <img src="https://i.pinimg.com/564x/99/57/50/9957506f5315d50b96b2c7ceda79295c.jpg" class="img-fluid w-100  rounded-start" >
+                                        </a>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="card-body" style="height: 90px;"> 
+                                            <div class="room-cabeza">
+                                                <h5 class="text-start" style="font-weight: bold;;font-size: 10px; margin-bottom: 0;">Habitacion independiente con baño propio</h5>
+                                                <div class="room-price">S/.240 </div>
+                                            </div>
+                                            <hr>
+                                            <div class="room-ubi">
+                                                <a href="https://www.google.com/maps">
+                                                    <img class="room-glovo" src="../../static/image/glovo.png">
+                                                </a>
+                                                <P class="room-paragraph">En el distrito de Santa Anita, Lima</P>
+                                            </div>
+
+                                            <div class="services">
+                                                <div class="service">
+                                                    <img src="../../static/image/cama.png" alt="Cama">
+                                                    <p class="available">Disponible</p>
+                                                </div>
+                                                <div class="service">
+                                                    <img src="../../static/image/ducha.png" alt="Ducha">
+                                                    <p class="available">Disponible</p>
+                                                </div>
+                                                <div class="service">
+                                                    <img src="../../static/image/luz.png" alt="Luz">
+                                                    <p class="available">Disponible</p>
+                                                </div>
+                                                <div class="service">
+                                                    <img src="../../static/image/wifi.png" alt="Internet">
+                                                    <p class="available">Disponible</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card mb-3" style="max-width: 100%; max-height: max-content;
+                                    border-left: 2px solid #bb6868; border-radius: 10px;">
+                                <div class="row g-0" >
+                                    <div class="col-md-5">
+                                        <a href="/perfil/{{p.idPersona}}">
+                                            <img src="https://i.pinimg.com/564x/99/57/50/9957506f5315d50b96b2c7ceda79295c.jpg" class="img-fluid w-100  rounded-start" >
+                                        </a>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="card-body" style="height: 90px;"> 
+                                            <div class="room-cabeza">
+                                                <h5 class="text-start" style="font-weight: bold;;font-size: 10px; margin-bottom: 0;">Habitacion independiente con baño propio</h5>
+                                                <div class="room-price">S/.240 </div>
+                                            </div>
+                                            <hr>
+                                            <div class="room-ubi">
+                                                <a href="https://www.google.com/maps">
+                                                    <img class="room-glovo" src="../../static/image/glovo.png">
+                                                </a>
+                                                <P class="room-paragraph">En el distrito de Santa Anita, Lima</P>
+                                            </div>
+
+                                            <div class="services">
+                                                <div class="service">
+                                                    <img src="../../static/image/cama.png" alt="Cama">
+                                                    <p class="available">Disponible</p>
+                                                </div>
+                                                <div class="service">
+                                                    <img src="../../static/image/ducha.png" alt="Ducha">
+                                                    <p class="available">Disponible</p>
+                                                </div>
+                                                <div class="service">
+                                                    <img src="../../static/image/luz.png" alt="Luz">
+                                                    <p class="available">Disponible</p>
+                                                </div>
+                                                <div class="service">
+                                                    <img src="../../static/image/wifi.png" alt="Internet">
+                                                    <p class="available">Disponible</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card mb-3" style="max-width: 100%; max-height: max-content;
+                                    border-left: 2px solid #bb6868; border-radius: 10px;">
+                                <div class="row g-0" >
+                                    <div class="col-md-5">
+                                        <a href="/perfil/{{p.idPersona}}">
+                                            <img src="https://i.pinimg.com/564x/99/57/50/9957506f5315d50b96b2c7ceda79295c.jpg" class="img-fluid w-100  rounded-start" >
+                                        </a>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="card-body" style="height: 90px;"> 
+                                            <div class="room-cabeza">
+                                                <h5 class="text-start" style="font-weight: bold;;font-size: 10px; margin-bottom: 0;">Habitacion independiente con baño propio</h5>
+                                                <div class="room-price">S/.240 </div>
+                                            </div>
+                                            <hr>
+                                            <div class="room-ubi">
+                                                <a href="https://www.google.com/maps">
+                                                    <img class="room-glovo" src="../../static/image/glovo.png">
+                                                </a>
+                                                <P class="room-paragraph">En el distrito de Santa Anita, Lima</P>
+                                            </div>
+
+                                            <div class="services">
+                                                <div class="service">
+                                                    <img src="../../static/image/cama.png" alt="Cama">
+                                                    <p class="available">Disponible</p>
+                                                </div>
+                                                <div class="service">
+                                                    <img src="../../static/image/ducha.png" alt="Ducha">
+                                                    <p class="available">Disponible</p>
+                                                </div>
+                                                <div class="service">
+                                                    <img src="../../static/image/luz.png" alt="Luz">
+                                                    <p class="available">Disponible</p>
+                                                </div>
+                                                <div class="service">
+                                                    <img src="../../static/image/wifi.png" alt="Internet">
+                                                    <p class="available">Disponible</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card mb-3" style="max-width: 100%; max-height: max-content;
+                                    border-left: 2px solid #bb6868; border-radius: 10px;">
+                                <div class="row g-0" >
+                                    <div class="col-md-5">
+                                        <a href="/perfil/{{p.idPersona}}">
+                                            <img src="https://i.pinimg.com/564x/99/57/50/9957506f5315d50b96b2c7ceda79295c.jpg" class="img-fluid w-100  rounded-start" >
+                                        </a>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="card-body" style="height: 90px;"> 
+                                            <div class="room-cabeza">
+                                                <h5 class="text-start" style="font-weight: bold;;font-size: 10px; margin-bottom: 0;">Habitacion independiente con baño propio</h5>
+                                                <div class="room-price">S/.240 </div>
+                                            </div>
+                                            <hr>
+                                            <div class="room-ubi">
+                                                <a href="https://www.google.com/maps">
+                                                    <img class="room-glovo" src="../../static/image/glovo.png">
+                                                </a>
+                                                <P class="room-paragraph">En el distrito de Santa Anita, Lima</P>
+                                            </div>
+
+                                            <div class="services">
+                                                <div class="service">
+                                                    <img src="../../static/image/cama.png" alt="Cama">
+                                                    <p class="available">Disponible</p>
+                                                </div>
+                                                <div class="service">
+                                                    <img src="../../static/image/ducha.png" alt="Ducha">
+                                                    <p class="available">Disponible</p>
+                                                </div>
+                                                <div class="service">
+                                                    <img src="../../static/image/luz.png" alt="Luz">
+                                                    <p class="available">Disponible</p>
+                                                </div>
+                                                <div class="service">
+                                                    <img src="../../static/image/wifi.png" alt="Internet">
+                                                    <p class="available">Disponible</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>  
+            </div>
+
+            <p>
+                Nisi aliquip voluptate culpa velit occaecat Lorem eiusmod est consequat ullamco veniam enim ad ex. Qui adipisicing eu id consectetur culpa aliqua qui dolor. Proident occaecat non proident quis tempor magna est amet. Aute culpa cupidatat consequat magna nostrud officia ipsum aliqua proident eu cupidatat ipsum. Esse laborum eu consequat Lorem eu labore nisi nisi. Mollit cupidatat dolor irure cupidatat aliquip ullamco enim.
+            </p>
+            
+        </article>
+    </main>
+    <footer>
+    </footer>
 </body>
+<script>
+    feather.replace()
+  </script>
 </html>
