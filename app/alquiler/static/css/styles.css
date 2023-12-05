@@ -1,0 +1,58 @@
+nav.navbar .navbar-brand {
+    color: black !important;
+}
+
+.navbar {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.map-container {
+    height: 800px; /* Ajusta según sea necesario para hacer el mapa más grande */
+    margin: 20px 0 0 0; /* Margen superior 20px, los demás a 0 (derecha, inferior, izquierda) */
+}
+
+
+
+.accommodation-card {
+    margin-top: 20px;
+    position: relative; /* Añadido para posicionar correctamente el precio */
+}
+
+/* Estilo para el contenedor del precio */
+.price-tag {
+    position: absolute;
+    top: 10px; /* Ajusta según sea necesario para la posición vertical */
+    left: 10px; /* Ajusta según sea necesario para la posición horizontal */
+}
+
+/* Estilo para el rectángulo ovalado verde */
+.oval-bg {
+    background-color: green;
+    width: 140px; /* Ajusta según sea necesario para el ancho del rectángulo */
+    height: 30px; /* Ajusta según sea necesario para la altura del rectángulo */
+    border-radius: 10px; /* Ajusta según sea necesario para la forma ovalada */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo para el texto del precio en color blanco */
+.price-text {
+    color: white;
+    font-weight: bold;
+}
+
+
+footer {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+footer a {
+    color: #ffffff; /* Cambia el color del texto de los enlaces a blanco */
+    margin: 0 10px; /* Añade un margen a los enlaces para separarlos un poco */
+    text-decoration: none; /* Elimina la decoración de subrayado de los enlaces */
+}
+

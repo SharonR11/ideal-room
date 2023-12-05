@@ -1,0 +1,200 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>IdealRoom</title>
+    <!-- Enlace al archivo CSS externo -->
+    <link type="text/css" href='{% static "css/styles.css" %}' rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font Awesome (iconos) -->
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand font-weight-bold" href="#">IdealRoom</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Categorías</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Ubicación</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Habitaciones</a>
+            </li>
+        </ul>
+        <div class="ml-auto">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Buscar" aria-label="Buscar" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <span class="input-group-text" id="basic-addon2">Buscar</span>
+                </div>
+            </div>
+            <a class="nav-link" href="#"><i class="fas fa-user"></i></a>
+        </div>
+    </div>
+</nav>
+
+<!-- Contenido principal -->
+<div class="container">
+    <div class="row">
+        <!-- Mapa en la mitad izquierda (col-md-7 para hacerlo más grande) -->
+        <div class="col-md-7">
+            <div id="map" class="map-container"></div>
+        </div>
+        <!-- Dos columnas en la mitad derecha (col-md-5) -->
+        <div class="col-md-5">
+            <!-- Primera columna de imágenes y texto -->
+            <div class="row">
+                <!-- Tarjeta de alojamiento con precio -->
+                <div class="col-md-6">
+                    <div class="accommodation-card">
+                        <div class="price-tag">
+                            <div class="oval-bg">
+                                <span class="price-text">Descuento 30%</span>
+                            </div>
+                        </div>
+                        <a href="detallealquiler.html?imagen=cuarto1">
+                            <img src="images/cuarto1.jpg" class="img-fluid" alt="Habitación para estudiantes">
+                        </a>
+                        <h5>Habitación para estudiantes</h5>
+                        <p>$380 mensual</p>
+                        <p>Av. Las Flores 148</p>
+                    </div>
+                </div>
+                <!-- Repite según sea necesario -->
+                <div class="col-md-6">
+                    <div class="accommodation-card">
+                        <div class="price-tag">
+                            <div class="oval-bg">
+                                <span class="price-text">Descuento 35%</span>
+                            </div>
+                        </div>
+                        <a href="detallealquiler.html?imagen=cuarto2">
+                            <img src="images/cuarto2.jpg" class="img-fluid" alt="Habitación para estudiantes">
+                        </a>
+                        <h5>Habitación para estudiantes</h5>
+                        <p>$350 mensual</p>
+                        <p>Av. Cáceres 145</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Segunda columna de imágenes y texto -->
+            <div class="row">
+                <!-- Repite según sea necesario -->
+                <div class="col-md-6">
+                    <div class="accommodation-card">
+                        <div class="price-tag">
+                            <div class="oval-bg">
+                                <span class="price-text">Descuento 35%</span>
+                            </div>
+                        </div>
+                        <a href="detallealquiler.html?imagen=cuarto3">
+                            <img src="images/cuarto3.jpg" class="img-fluid" alt="Habitación para estudiantes">
+                        </a>
+                        <h5>Habitación para estudiantes</h5>
+                        <p>$360 mensual</p>
+                        <p>Av. Grau 154</p>
+                    </div>
+                </div>
+                <!-- Repite según sea necesario -->
+                <div class="col-md-6">
+                    <div class="accommodation-card">
+                        <div class="price-tag">
+                            <div class="oval-bg">
+                                <span class="price-text">Descuento 30%</span>
+                            </div>
+                        </div>
+                        <a href="detallealquiler.html?imagen=cuarto4">
+                            <img src="images/cuarto4.jpg" class="img-fluid" alt="Habitación para estudiantes">
+                        </a>
+                        <h5>Habitación para estudiantes</h5>
+                        <p>$385 mensual</p>
+                        <p>Av. El Sol 125</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Tarjeta de alojamiento con precio -->
+                <div class="col-md-6">
+                    <div class="accommodation-card">
+                        <div class="price-tag">
+                            <div class="oval-bg">
+                                <span class="price-text">Descuento 40%</span>
+                            </div>
+                        </div>
+                        <a href="detallealquiler.html?imagen=cuarto5">
+                            <img src="images/cuarto5.jpg" class="img-fluid" alt="Habitación para estudiantes">
+                        </a>
+                        <h5>Habitación para estudiantes</h5>
+                        <p>$340 mensual</p>
+                        <p>Av. Valdelomar 124</p>
+                    </div>
+                </div>
+                <!-- Repite según sea necesario -->
+                <div class="col-md-6">
+                    <div class="accommodation-card">
+                        <div class="price-tag">
+                            <div class="oval-bg">
+                                <span class="price-text">Descuento 30%</span>
+                            </div>
+                        </div>
+                        <a href="detallealquiler.html?imagen=cuarto6">
+                            <img src="images/cuarto6.jpg" class="img-fluid" alt="Habitación para estudiantes">
+                        </a>
+                        <h5>Habitación para estudiantes</h5>
+                        <p>$380 mensual</p>
+                        <p>Av. Peña 135</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Repite el patrón según sea necesario -->
+            
+        </div>
+    </div>
+</div>
+
+<!-- Pie de página -->
+<footer class="text-center fixed-bottom">
+    <a href="#">Aviso Legal</a> | <a href="#">Términos y Condiciones</a> | <a href="#">Contáctanos</a> | <a href="#">©IdealRoom2023</a>
+</footer>
+
+<!-- Bootstrap JS y jQuery (opcional) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-Uoq12p+YB1NQTP6s9d7Qp5p8FqErKJcp6nFiE+gbsjE+IbbVYUew+OrCXaRkfjz" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!-- Font Awesome (iconos) -->
+<script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+
+<!-- Script para cargar la API de Google Maps y crear el mapa -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHV1Q-4Zo8VulvXA710F_5yqfD_JRIRsA&callback=initMap" async defer></script>
+<script>
+    function initMap() {
+        // Coordenadas del centro del mapa
+        var center = { lat: -12.04540037203226, lng: -76.95264279988278 };
+        // Opciones del mapa
+        var mapOptions = {
+            center: center,
+            zoom: 12, // Ajusta el nivel de zoom según sea necesario
+        };
+
+        // Crea el mapa
+        var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+    }
+</script>
+
+</body>
+</html>

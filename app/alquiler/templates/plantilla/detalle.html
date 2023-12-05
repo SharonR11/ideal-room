@@ -1,0 +1,130 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Detalle de Alquiler - IdealRoom</title>
+    <link type="text/css" href='{% static "css/styles.css" %}' rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-Uoq12p+YB1NQTP6s9d7Qp5p8FqErKJcp6nFiE+gbsjE+IbbVYUew+OrCXaRkfjz" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand font-weight-bold" href="#">IdealRoom</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Categorías</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Ubicación</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Habitaciones</a>
+            </li>
+        </ul>
+        <div class="ml-auto">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Buscar" aria-label="Buscar" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <span class="input-group-text" id="basic-addon2">Buscar</span>
+                </div>
+            </div>
+            <a class="nav-link" href="#"><i class="fas fa-user"></i></a>
+        </div>
+    </div>
+</nav>
+<!-- Carrusel de Imágenes -->
+<div class="container mt-3">
+    <div id="imageCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/cuarto1.jpg" class="d-block w-100" alt="Imagen 1">
+            </div>
+            <div class="carousel-item">
+                <img src="images/cuarto2.jpg" class="d-block w-100" alt="Imagen 2">
+            </div>
+            <div class="carousel-item">
+                <img src="images/cuarto3.jpg" class="d-block w-100" alt="Imagen 3">
+            </div>
+            <div class="carousel-item">
+                <img src="images/cuarto4.jpg" class="d-block w-100" alt="Imagen 3">
+            </div>
+            <div class="carousel-item">
+                <img src="images/cuarto5.jpg" class="d-block w-100" alt="Imagen 3">
+            </div>
+            <div class="carousel-item">
+                <img src="images/cuarto6.jpg" class="d-block w-100" alt="Imagen 3">
+            </div>
+            <!-- Agregar más imágenes según sea necesario -->
+        </div>
+        <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+</div>
+
+<!-- Card con Detalles del Alquiler -->
+<div class="container mt-3">
+    <div class="card">
+        <div class="card-body">
+            <h4 id="precio" class="card-title text-center text-white bg-info"></h4>
+            <div class="row">
+                <div class="col-md-6">
+                    <p><i class="far fa-calendar-alt"></i> Ingreso: <input type="text" id="fechaIngreso" class="datepicker"></p>
+                    <p><i class="far fa-calendar-alt"></i> Salida: <input type="text" id="fechaSalida" class="datepicker"></p>
+                </div>
+                <div class="col-md-6">
+                    <textarea class="form-control" placeholder="Preséntate al anfitrión"></textarea>
+                    <button class="btn btn-success btn-block mt-3">Solicitar Reserva</button>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <button class="btn btn-danger"><i class="far fa-heart"></i> Añadir a favoritos</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS y jQuery (opcional) -->
+<script>
+    $(document).ready(function () {
+        $('#imageCarousel').on('slid.bs.carousel', function () {
+            const detallesHabitacion = obtenerDetallesHabitacion();
+            $('#precio').html(detallesHabitacion.replace(/\n/g, '<br/>'));
+        });
+
+        // Inicializar datepicker
+        $('.datepicker').datepicker({
+            dateFormat: 'dd/mm/yy',
+            minDate: 0 // Evitar seleccionar fechas pasadas
+        });
+    });
+
+    function obtenerDetallesHabitacion() {
+        // Lógica para obtener detalles según la imagen seleccionada
+        // Puedes utilizar la lógica que desees aquí, por ejemplo, comparando el nombre de la imagen actual
+        return '<strong>Descuento 30%</strong> - Habitación para estudiantes - $380 mensual - Av. Las Flores 148';
+    }
+</script>
+
+</body>
+</html>

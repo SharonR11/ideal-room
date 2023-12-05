@@ -1,0 +1,348 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>IdealRoom - Simplifica tu búsqueda de alojamiento</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #495057;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Breadcrumb Section */
+        #breadcrumb-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('slide2.png') center/cover fixed;
+            color: #fff;
+            padding: 100px 0;
+            margin: 0;
+        }
+
+        #breadcrumb-section h2 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #007bff; /* Tecsup Blue */
+        }
+
+        /* About Section */
+        #about-section {
+            padding: 60px 0;
+            margin: 0;
+        }
+
+        #about-section img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .about-content {
+            padding-left: 30px;
+        }
+
+        /* Mission and Vision Section */
+        #mission-vision-section {
+            padding: 60px 0;
+            margin: 0;
+        }
+
+        .mission-title, .vision-title {
+            color: #007bff;
+        }
+
+        .mission-grid-item, .vision-grid-item {
+            margin-bottom: 30px;
+        }
+
+        /* Features Section */
+        #features-section {
+            padding: 60px 0;
+            margin: 0;
+        }
+
+        .feature-title {
+            color: #007bff;
+        }
+
+        .feature-grid-item {
+            margin-bottom: 30px;
+        }
+
+        .details-btn, .custom-btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .details-btn:hover, .custom-btn:hover {
+            background-color: #0056b3;
+            color: #fff;
+        }
+
+        /* Responsive */
+        @media (max-width: 767px) {
+            #about-section img {
+                margin-bottom: 30px;
+            }
+
+            .about-content {
+                padding-left: 0;
+            }
+        }
+
+
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        .contact-section {
+            padding: 120px 0;
+            background-color: #f8f9fa;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 70px;
+        }
+
+        .form-item {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .form-item input,
+        .form-item select,
+        .form-item textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+        }
+
+        .form-item label {
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%);
+            font-size: 18px;
+            color: #6c757d;
+            cursor: pointer;
+        }
+
+        .submit-btn-area {
+            margin-top: 20px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <section id="breadcrumb-section" class="breadcrumb-section clearfix">
+        <div class="default-breadcrumb">
+            <div class="parallax-window" data-parallax="scroll" data-image-src="slide2.png">
+                <div class="overlay">
+                    <div class="container">
+                        <div class="row justify-content-lg-between justify-content-md-center">
+
+                            <div class="col-lg-6 col-md-8 col-sm-12">
+                                <div class="breadcrumb-content">
+                                    <h2 class="breadcrumb-title mb-0 tec-sup">IdealRoom</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-section" class="about-section sec-ptb-120 clearfix">
+        <div class="container">
+            <div class="row justify-content-lg-between justify-content-md-center">
+
+                <div class="col-lg-6 col-md-8 col-sm-12">
+                    <div class="about-image">
+                        <span class="decoration-image">
+                            <img src="mujer.jpg" alt="" class="img-fluid rounded">
+                        </span>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-9 col-sm-12">
+                    <div class="about-content">
+
+                        <div class="section-title">
+                            <span class="small-title tec-sup">Tu solución para la búsqueda de alojamiento</span>
+                            <h2 class="big-title mb-0 tec-sup">Simplificamos y mejoramos tu experiencia</h2>
+                        </div>
+                        <p>IdealRoom, nuestra aplicación web especializada en el arrendamiento de cuartos para estudiantes de Tecsup, presenta diversas funcionalidades clave para optimizar la experiencia de búsqueda y selección de alojamiento.</p>
+                        <p>Ofrecemos un registro seguro mediante el correo institucional de Tecsup, asegurando la autenticidad de los perfiles. Además, implementamos descuentos exclusivos en colaboración con arrendadores para garantizar tarifas preferenciales.</p>
+                        <p>Con IdealRoom, simplificamos y mejoramos la búsqueda de alojamiento para estudiantes de Tecsup.</p>
+                        <a href="#!" class="custom-btn scrollForm tec-btn">Regístrate ahora</a>
+                        <a href="#" class="custom-btn tec-btn">Explora nuestras ofertas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mission-vision-section" class="mission-vision-section sec-ptb-120 bg-light-gray clearfix">
+        <div class="container">
+
+            <div class="section-title text-center mb-30">
+                <span class="small-title tec-sup">Misión y Visión</span>
+                <h2 class="big-title mb-0 tec-sup">Nuestro Propósito y Futuro</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="mission-grid-item">
+                        <span class="item-icon"><i class="fal fa-bullseye tec-sup"></i></span>
+                        <h3 class="mission-title tec-sup">Misión</h3>
+                        <p>Facilitar y mejorar la experiencia de búsqueda de alojamiento para los estudiantes de Tecsup, ofreciendo una plataforma intuitiva y segura que conecta a estudiantes con opciones de vivienda adaptadas a sus necesidades académicas y preferencias.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="vision-grid-item">
+                        <span class="item-icon"><i class="fal fa-binoculars tec-sup"></i></span>
+                        <h3 class="vision-title tec-sup">Visión</h3>
+                        <p>Convertirnos en el referente principal para los estudiantes de Tecsup en la búsqueda de alojamiento, proporcionando una plataforma innovadora que no solo simplifica el proceso, sino que también crea un ecosistema centrado en la seguridad, confianza y colaboración dentro de la comunidad estudiantil.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features-section" class="features-section clearfix tec-bg">
+        <div class="container">
+    
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="feature-card text-center">
+                        <i class="fal fa-home tec-sup"></i>
+                        <h2 class="feature-text tec-sup">Amplia oferta de propiedades en alquiler</h2>
+                        <p class="feature-description tec-sup">Encuentra tu hogar ideal entre una variedad de propiedades en alquiler adaptadas a tus necesidades y preferencias.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="feature-card text-center">
+                        <i class="fal fa-dollar-sign tec-sup"></i>
+                        <h2 class="feature-text tec-sup">Oportunidades exclusivas de venta</h2>
+                        <p class="feature-description tec-sup">Descubre propiedades en venta con ofertas exclusivas y asesoramiento personalizado para facilitar tu proceso de compra.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="feature-card text-center">
+                        <i class="fal fa-map-marker-alt tec-sup"></i>
+                        <h2 class="feature-text tec-sup">Variedad de ubicaciones en diferentes distritos</h2>
+                        <p class="feature-description tec-sup">Explora diversas ubicaciones en los distritos más buscados, ofreciendo opciones para todos los gustos y preferencias.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="feature-card text-center">
+                        <i class="fal fa-clock tec-sup"></i>
+                        <h2 class="feature-text tec-sup">15 Años brindando soluciones habitacionales</h2>
+                        <p class="feature-description tec-sup">Con una trayectoria de 15 años, hemos sido líderes en ofrecer soluciones habitacionales confiables y de calidad para nuestros clientes.</p>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+
+    <section id="formWrap" class="contact-section sec-ptb-120 bg-light-gray clearfix">
+        <div class="container">
+            <div class="section-title text-center mb-70">
+                <span class="small-title">¿Cómo podemos ayudarte?</span>
+                <h2 class="big-title mb-0">Escríbenos</h2>
+            </div>
+
+            <form>
+                <input id="proyId" type="hidden" value="" name="proyId">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-item">
+                            <input id="nombre" name="nombre" type="text" placeholder="Nombre" required>
+                            <label for="nombre" class="form-item-btn"><i class="far fa-user"></i></label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-item">
+                            <input id="apellido" name="apellido" type="text" placeholder="Apellido" required>
+                            <label for="apellido" class="form-item-btn"><i class="far fa-user"></i></label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-item">
+                            <input id="correo" name="correo" type="email" placeholder="Correo Electrónico" required>
+                            <label for="correo" class="form-item-btn"><i class="far fa-envelope"></i></label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-item">
+                            <input id="telefono" name="telefono" type="tel" placeholder="Teléfono/Celular" required>
+                            <label for="telefono" class="form-item-btn"><i class="far fa-paper-plane"></i></label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="form-item">
+                            <select name="interes" id="interes" class="inputsForms" required>
+                                <option value="" selected>Estoy interesado en:</option>
+                                <option value="0">Vender con ustedes</option>
+                                <option value="1">Encontrar una propiedad</option>
+                                <option value="2">Arquitectura e implementación</option>
+                                <option value="3">Recorridos 360</option>
+                            </select>
+                            <label for="interes" class="form-item-btn"><i class="far fa-edit"></i></label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="form-item">
+                            <textarea id="comentarios" name="comentarios" placeholder="Mensaje" required></textarea>
+                            <label for="comentarios" class="form-item-btn"><i class="far fa-comments"></i></label>
+                        </div>
+
+                        <div class="block-answer col-md-12">
+                            <div class="values"><div class="error-message"><p></p></div></div>
+                        </div>
+
+                        <div class="submit-btn-area text-center">
+                            <button type="submit" class="btn btn-primary custom-btn">Enviar Mensaje</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

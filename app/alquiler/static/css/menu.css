@@ -1,11 +1,31 @@
 
 .nav-color{
-    background-color: blue;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: -2;
+    left: 0;
+    right: 0;
 }
 
 .bt-color{
     background-color: rgb(255, 255, 255);
 }
+.btn-outline-mio{--bs-btn-color:#239fc5;
+    --bs-btn-border-color:#239fc5;
+    --bs-btn-hover-color:#fff;
+    --bs-btn-hover-bg:#239fc5;
+    --bs-btn-hover-border-color:#239fc5;
+    --bs-btn-focus-shadow-rgb:13,110,253;
+    --bs-btn-active-color:#fff;
+    --bs-btn-active-bg:#239fc5;
+    --bs-btn-active-border-color:#239fc5;
+    --bs-btn-active-shadow:inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color:#239fc5;
+    --bs-btn-disabled-bg:transparent;
+    --bs-btn-disabled-border-color:#239fc5;
+    --bs-gradient:none}
+
 .column-content {
     max-width: 100%;
     overflow: hidden;
@@ -13,10 +33,8 @@
 }
 nav {
     height: 60px; /* Cambia este valor según la altura deseada */
-    
     z-index: 1000;
-    background-color: rgb(42, 80, 176);
-    
+    background: linear-gradient(90deg, rgba(106, 223, 66, 0.4), rgba(0, 74, 217, 0.5));
 }
 .col-md-4 {
     display: flex;
@@ -44,8 +62,43 @@ nav {
 }
 .carousel-sty{
     max-width: 300px; margin: 0 auto;
+    max-height: 150; 
     margin: 0 auto;
 }
+
+.carousel-inner{
+    position:relative;
+    max-width: 300px;
+    overflow:hidden; 
+    border-radius: 10px;
+    box-shadow: 3px 1px 10px rgb(23, 20, 20);
+    position:relative;height:100%;overflow:hidden
+}.carousel-inner::after{
+    display:block;
+    clear:both;content:""}
+ .d-block{display:flex!important}
+
+ .carousel-item {
+    width: 300px; /* Ajusta el ancho según tus necesidades */
+    height: 150px; /* Ajusta la altura según tus necesidades */
+    overflow: hidden; /* Asegura que las imágenes no se salgan del contenedor */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+}
+
+
+
+
+
+
+
+
+
+    
 main{
     margin-top: 60px;
 }
@@ -149,7 +202,7 @@ main{
 
 
 
-/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+/* aaaaaaaaaaaaaaaaaESTEFANIAaaaaaaaaaaaaaaaaaaaaaaa */
 
 .room-container {
     display: flex;
