@@ -1,0 +1,138 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #495057;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Breadcrumb Section */
+#breadcrumb-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('../../static/image/slide2.png') center/cover fixed;
+    color: #fff;
+    padding: 100px 0;
+    margin: 0;
+}
+
+#breadcrumb-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #007bff; /* Tecsup Blue */
+}
+
+/* About Section */
+#about-section {
+    padding: 60px 0;
+    margin: 0;
+}
+
+#about-section img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-content {
+    padding-left: 30px;
+}
+
+/* Mission and Vision Section */
+#mission-vision-section {
+    padding: 60px 0;
+    margin: 0;
+}
+
+.mission-title, .vision-title {
+    color: #007bff;
+}
+
+.mission-grid-item, .vision-grid-item {
+    margin-bottom: 30px;
+}
+
+/* Features Section */
+#features-section {
+    padding: 60px 0;
+    margin: 0;
+}
+
+.feature-title {
+    color: #007bff;
+}
+
+.feature-grid-item {
+    margin-bottom: 30px;
+}
+
+.details-btn, .custom-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.details-btn:hover, .custom-btn:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    #about-section img {
+        margin-bottom: 30px;
+    }
+
+    .about-content {
+        padding-left: 0;
+    }
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.contact-section {
+    padding: 120px 0;
+    background-color: #f8f9fa;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.form-item {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form-item input,
+.form-item select,
+.form-item textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.form-item label {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #6c757d;
+    cursor: pointer;
+}
+
+.submit-btn-area {
+    margin-top: 20px;
+}

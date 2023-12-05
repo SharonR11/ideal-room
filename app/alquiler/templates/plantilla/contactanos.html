@@ -6,24 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link type="text/css" href='{% static "css/bootstrap.min.css" %}' rel="stylesheet"> 
+    <link type="text/css" href='{% static "css/headfoot.css" %}' rel="stylesheet">
     <style>
         body {
             font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .btnstar {
+            background: linear-gradient(to right, #FF6F61, #FFAB83);
+            border: none;
+            border-radius: 25px;
+            padding: 12px 24px;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .btnstar:hover {
+            background: linear-gradient(to right, #FFAB83, #FF6F61);
         }
 
         .contact-section {
-            padding: 120px 0;
-            background-color: #f8f9fa;
+            padding: 80px 0;
+            text-align: center; /* Center align the text */
         }
 
         .section-title {
-            text-align: center;
-            margin-bottom: 70px;
+            margin-bottom: 50px;
+        }
+
+        /* Style for the question */
+        .question {
+            font-size: 28px;
+            color: #617bff;
+            margin-bottom: 10px;
+        }
+
+        /* Style for the invitation */
+        .invitation {
+            font-size: 20px;
+            color: #555;
         }
 
         .form-item {
             position: relative;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 
         .form-item input,
@@ -31,8 +68,17 @@
         .form-item textarea {
             width: 100%;
             padding: 15px;
-            border: 1px solid #ced4da;
+            border: 1px solid #6661ff;
             border-radius: 5px;
+            box-shadow: 0 0 8px rgba(49, 143, 169, 0.5);
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .form-item input:focus,
+        .form-item select:focus,
+        .form-item textarea:focus {
+            border-color: #8983ff;
+            box-shadow: 0 0 10px rgba(97, 158, 255, 0.7)
         }
 
         .form-item label {
@@ -41,25 +87,75 @@
             right: 15px;
             transform: translateY(-50%);
             font-size: 18px;
-            color: #6c757d;
+            color: #9861ff;
             cursor: pointer;
         }
 
         .submit-btn-area {
-            margin-top: 20px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* Add styling to the error message */
+        .error-message {
+            color: #5b3ce7;
+            margin-top: 5px;
         }
     </style>
 </head>
 <body>
-
-    <section id="formWrap" class="contact-section sec-ptb-120 bg-light-gray clearfix">
+<header>
+        <nav style="background: linear-gradient(90deg, rgba(83, 216, 39, 0.4), rgba(14, 73, 191, 0.5));">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 col-left">
+                        <div class="column-content">
+                            <a class="navbar-brand" href="#">
+                                <img src="../../static/image/idealroom.png" alt="Logo" width="mx-auto" height="24" class="d-inline-block align-text-top">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-center">
+                        <div class="column-content ">
+                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group" >
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" >
+                                <label class="btn btn-outline-mio bt-color text-dark" for="btnradio1" onclick="redirectTo('/')">Inicio</label>
+                              
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                                <label class="btn btn-outline-mio bt-color text-dark" for="btnradio2" onclick="redirectTo('/mapa/')">Mapa</label>
+                              
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" checked>
+                                <label class="btn btn-outline-mio bt-color text-dark" for="btnradio3" onclick="redirectTo('/contacto/')">Contactanos</label>
+            
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                                <label class="btn btn-outline-mio bt-color text-dark" for="btnradio4" onclick="redirectTo('/nosotros/')">Nosotros</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-right">
+                        <div class="column-content ">
+                            <div class="user-form">
+                                <a>Usuario 1    </a>
+                                <!-- Imagen de usuario -->
+                                <a class="" href="/perfil/">
+                                    <img src="../../static/image/usuario.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                                </a>
+                            </div>                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+<main>
+<section id="formWrap" class="contact-section sec-ptb-120">
         <div class="container">
-            <div class="section-title text-center mb-70">
-                <span class="small-title">¿Cómo podemos ayudarte?</span>
-                <h2 class="big-title mb-0">Escríbenos</h2>
+            <div class="section-title">
+                <div class="question">¿Cómo podemos ayudarte?</div>
+                <div class="invitation">Escríbenos</div>
             </div>
 
-            <form>
+            <form novalidate>
                 <input id="proyId" type="hidden" value="" name="proyId">
                 <div class="row">
                     <div class="col-md-6">
@@ -85,7 +181,7 @@
                     <div class="col-md-6">
                         <div class="form-item">
                             <input id="telefono" name="telefono" type="tel" placeholder="Teléfono/Celular" required>
-                            <label for="telefono" class="form-item-btn"><i class="far fa-paper-plane"></i></label>
+                            <label for="telefono" class="form-item-btn"><i class="fas fa-phone"></i></label>
                         </div>
                     </div>
 
@@ -111,16 +207,77 @@
                         <div class="block-answer col-md-12">
                             <div class="values"><div class="error-message"><p></p></div></div>
                         </div>
-
-                        <div class="submit-btn-area text-center">
-                            <button type="submit" class="btn btn-primary custom-btn">Enviar Mensaje</button>
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                            <button class="btnstar btn btn-primary" type="submit" [disabled]="loginForm.invalid">Enviar Mensaje</button>
                         </div>
                     </div>
                 </div>
             </form>
         </div>
     </section>
+</main>
+<footer class=" py-3">
+        <div class="container">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3 col-left">
+                        <div class="column-content">
+                            <p>Direccion</p>
+                            <p>Telefono</p>
+                            <p>Email</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-center">
+                        <div class="column-content">
+                            <p>Polticas de Privacidad</p>
+                            <p>Terminos y Condiciones</p>
+                            <p>Centro de ayuda</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-center">
+                        <div class="column-content">
+                            <p>Conoce a la Empresa</p>
+                            <p>Mision</p>
+                            <p>Vision</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-right">
+                        <div class="column-content">
+                            <p>Opciones de Cancelacion</p>
+                            <p>Telefono</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-left">
+                        <div class="column-content content3">
+                            <p class="mb-3">Realizado por &copy; Tecsup, para que puedas encontrar tu mejor lugar!</p>
 
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-right" style="align-content: end;">
+                        <div class="column-content">
+                            <img src="../../static/image/tecsup.png" alt="Logo" width="" height="40px" class="d-inline-block align-text-top">
+                        </div>
+                    </div>
+                </div>
+
+            </div>          
+        </div>
+    </footer>
+
+    
+    <script>
+        feather.replace()
+      </script>
+      <script>
+        function redirectTo(page) {
+            window.location.href = page;
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
 </body>

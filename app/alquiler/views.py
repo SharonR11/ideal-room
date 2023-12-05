@@ -15,8 +15,10 @@ def menu(request):
 
 
 def registro(request):
-    return render(request,'plantilla/perfilusu.html')
+    return render(request,'plantilla/registro.html')
 
+def login(request):
+    return render(request,'plantilla/login.html')
 
 # -------- YA ESTA ----
 def perfil(request):
