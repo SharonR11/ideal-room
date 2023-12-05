@@ -2,7 +2,7 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-
+    
     path('', views.menu, name='menu'),
     # -------- YA ESTA ----
     path('perfil/', views.perfil, name='perfil'),

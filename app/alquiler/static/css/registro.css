@@ -1,0 +1,208 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid rgb(116, 152, 210);
+    border-radius: 20px;
+    
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+.google-signup-text {
+    font-weight: bold;
+    color: #4285f4; /* Google Blue color */
+    cursor: pointer;
+    margin: 0;
+}
+
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+
+.google-btn:hover {
+    background-color: rgb(49, 178, 243);
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+.content {
+    position: fixed;
+    
+    top: 0;
+    bottom: 0;
+    z-index: -2;
+    left: 0;
+    right: 0;
+    background: linear-gradient(90deg, rgba(106, 223, 66, 0.4), rgba(0, 74, 217, 0.5));
+
+}
+
+
+
+.inner-container {
+    max-width: 700px;
+    padding: 20px;
+}
+h1 {
+    font-weight: bold; /* Aplica negrita */
+    font-size: 34px; /* Establece el tamaño de fuente en 34px */
+    color: black;
+}
+small {
+    font-weight: normal; /* Aplica un grosor de fuente normal (regular) */
+    font-size: 15px; /* Establece el tamaño de fuente en 15px */
+    color: black;
+}
+
+h5 {
+    font-weight: lighter; /* Aplica negrita */
+    font-size: 10px; /* Establece el tamaño de fuente en 34px */
+}
+
+
+.header-title {
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.panel {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    color: #000000;
+    max-width: 1000px; 
+    margin: 10% auto 0;
+}
+/* .panel-body {
+    padding: 10px 15px 15px 15px;
+} */
+
+
+.btnstart {
+    background: radial-gradient(circle, rgb(238, 130, 58), #eda98a); /* Color naranja */
+    border-radius: 22px; /* Ajusta el valor según el grado de redondez deseado */
+    padding: 10px 50px; /* Ajusta el relleno (padding) según tus necesidades */
+    color: #fff; /* Color del texto en blanco */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px; /* Tamaño de fuente */
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: 60%;
+}
+.google-btn {
+    border-radius: 15px; 
+    background-color: rgb(75, 235, 64);
+    color: rgb(163, 60, 60);
+    padding: 5px 20px;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+}
+.btnstart:hover {
+    background-color: #FFD700; /* Cambiar el color de fondo al pasar el cursor */
+    border: 2px solid #FFD700; /* Cambiar el color del borde al pasar el cursor */
+}
+
+
+.form-registro {
+
+    position: relative;
+    width: 320px; 
+    height: 54px;
+    background: white;
+    border-radius: 10px; 
+    border: 1px rgba(172, 18, 18, 0.1) solid;
+    margin-bottom: 5px;
+}
+.form-registro1 {
+    position: relative;
+    width: 410px;
+    height: 40px;
+    background: rgb(213, 222, 241);
+    border-radius: 10px;
+    border: 1px rgba(20, 18, 18, 0.1) solid;
+    margin-bottom: 5px;
+}
+
+.division1 {
+    width: 300px;
+    height: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.span-izquierda1 img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+
+   
+}
+.span-izquierda {
+    left: 20px;
+    top: 20px;
+    position: relative;
+    color: #6D7278;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    width: 10px; /* Ajusta el valor según tus necesidades */
+}
+
+.division{
+    width: 1px;
+    height: 24px;
+    left: 115px;
+    top: 15px; 
+    position: absolute; 
+    background: rgba(0, 0, 0, 0.10)
+}
+.span-derecha{
+    left: 120px; 
+    top: 20px; 
+    position: absolute; 
+    color: #7691b3; 
+    font-size: 12px; 
+    font-family: sans-serif;
+    font-weight: lighter;
+    word-wrap: break-word;
+}
+
+
+input{
+    border: 0px solid #ccc; /* Define un borde personalizado (puedes ajustar el color y el grosor según tus preferencias) */
+    outline: none;
+    width: 180px;
+}
+.icono-candado {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; /* Ajusta el margen según sea necesario */
+}
